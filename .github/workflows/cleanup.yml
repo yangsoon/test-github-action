@@ -20,5 +20,5 @@ jobs:
         run: make print
       
       - name: cleanup
-        if: ${{ always() }}
+        # if: ${{ always() }}
         run: make cleanup
