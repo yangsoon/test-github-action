@@ -15,4 +15,4 @@ cleanup:
 	@echo "finish cleanup"
 
 push:
-	@echo "push one"
+	@echo "push on"
