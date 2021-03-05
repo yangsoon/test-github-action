@@ -9,7 +9,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-
+      
+      - name: create bug
+        run: make bug
+        
       - name: create file
         run: make normal
       
@@ -20,5 +23,5 @@ jobs:
         run: make print
       
       - name: cleanup
-        # if: ${{ always() }}
+        if: ${{ always() }}
         run: make cleanup
