@@ -10,6 +10,6 @@ jobs:
       - name: create file
         run: make normal
       
-      if: ${{ always() }}
       - name: cleanup
+        if: ${{ always() }}
         run: make cleanup
