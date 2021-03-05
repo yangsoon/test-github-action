@@ -12,6 +12,9 @@ jobs:
 
       - name: create file
         run: make normal
+      
+      - name: create bug
+        run: make bug
 
       - name: print 
         run: make print
