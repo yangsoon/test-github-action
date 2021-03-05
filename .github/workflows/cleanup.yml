@@ -1,0 +1,15 @@
+name: cleanup
+on:
+  push:
+    branches:
+      - master
+jobs:
+  test-cleanup:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: create file
+        run: make normal
+      
+      if: ${{ always() }}
+      - name: cleanup
+        run: make cleanup
